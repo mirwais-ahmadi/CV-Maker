@@ -1,0 +1,18 @@
+[{
+  "_id": {
+    "$oid": "68fc6b49a7d57c8693d5f2f1"
+  },
+  "slug": "ModernTemplate",
+  "name": "Modern Template",
+  "previewImage": "/previews/modern.png",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum cupiditate deleniti eveniet illo, laudantium minima natus omnis, perferendis, quas quod soluta vero vitae. Amet cumque dicta dolorem maxime minima! Incidunt."
+},
+{
+  "_id": {
+    "$oid": "68fc6b5aa7d57c8693d5f2f5"
+  },
+  "slug": "ClassicTemplate",
+  "name": "Classic Template",
+  "previewImage": "/previews/classic.png",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum cupiditate deleniti eveniet illo, laudantium minima natus omnis, perferendis, quas quod soluta vero vitae. Amet cumque dicta dolorem maxime minima! Incidunt."
+}]

@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #282B8F;
+  --secondary: #1A91F0;
+  --darker: #1170CD;
+  --lighter: #EAF6FF;
+  --neutral-90: #1e2532;
+}
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-darker: var(--darker);
+  --color-lighter: var(--lighter);
+  --color-text-color: var(--neutral-90);
+}
+
+@layer base {
+  h2 {
+    @apply text-6xl;
+  }
+  h3 {
+    @apply text-4xl lg:text-5xl font-bold text-text-color;
+  }
+  h4 {
+    @apply text-xl font-bold text-primary;
+  }
+}
+
+body {
+
+}
+
+@layer components {
+  .button {
+    @apply py-3 px-5 flex items-center justify-center bg-secondary hover:bg-darker text-white rounded cursor-pointer duration-100;
+  }
+  .light-button {
+    @apply py-3 px-5 flex items-center justify-center bg-lighter border border-lighter hover:border-secondary font-bold text-secondary rounded cursor-pointer transition-all duration-100;
+  }
+  .text-input {
+    @apply border-b-2 border-lighter focus:border-secondary focus:rounded-b-none py-2 rounded px-3 outline-none w-full bg-gray-100 text-black;
+  }
+  .side-item {
+    @apply flex items-center cursor-pointer p-2 rounded justify-center lg:justify-between lg:items-start;
+  }
+  .side-item.active {
+    @apply text-primary bg-secondary text-white;
+  }
+
+  .tab-item {
+    @apply flex items-center space-x-2 px-4 py-1 rounded-lg cursor-pointer;
+  }
+  .tab-item.active {
+    @apply bg-lighter text-primary;
+  }
+
+  .form-label {
+    @apply space-y-1 w-full flex flex-col text-gray-500;
+  }
+}
+
